@@ -26,8 +26,10 @@ export default class Redirect extends React.Component {
 				<div id="redirect-content">
 					<h1>Thank you for registering!</h1>
 
-					<Link to="/"><button> RETURN TO COURSE </button></Link>
-					<a href="https://www.myclubs.com/at/de"><button> EXPLORE OTHER COURSES </button></a>
+					<div id="btn-container">
+						<Link to="/"><button> RETURN TO COURSE </button></Link>
+						<a href="https://www.myclubs.com/at/de"><button> EXPLORE COURSES </button></a>
+					</div>
 				</div>
 			</div>
 		);

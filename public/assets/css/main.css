@@ -1,0 +1,509 @@
+/*
+	================== MAIN CSS ==================
+*/
+
+/* ================== GENERAL ================== */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color:#241e2b;
+}
+
+.container {
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding:0px 15px 0px 15px;
+
+	border-width: 15px;
+	border-color: #eb3b34;
+	border-style:solid;
+
+	overflow:hidden;
+}
+
+#main-row {
+	height:480px;
+}
+
+.trim {
+	max-height:480px;
+	overflow: hidden;
+	float:left;
+}
+
+#clear {
+	clear:both;
+}
+
+/* ================== ANIMATIONS ================== */
+@keyframes upAndIn {
+	to {
+		transform: translateY(0px); 
+		opacity: 1;
+	}
+ }
+
+ @keyframes slideIn {
+ 	to {
+ 		transform:translateX(0px);
+ 		opacity:1;
+ 	}
+ }
+
+ /* ----------- FLOAT IN SEQ ---------- */
+
+/* ----- MAIN/INFO -----*/
+#courseimg {
+	opacity:0;
+	animation:slideIn .7s ease .7s forwards;
+	transform: translateX(-100px);
+}
+
+.information-container {
+	opacity:0;
+	animation:slideIn .7s ease .7s forwards;
+	transform:translateX(100px);
+}
+
+#information-join {
+	opacity:0;
+	animation: upAndIn 1.5s ease 1.5s forwards;
+	transform:translateY(10px);
+}
+
+#information-hrs {
+	opacity:0;
+	animation: upAndIn 2s ease 2s forwards;
+	transform:translateY(10px);
+}
+
+#information-location {
+	opacity:0;
+	animation: upAndIn 2.5s ease 2.5s forwards;
+	transform:translateY(10px);
+}
+
+button.info-btn {
+	opacity:0;
+	animation: upAndIn 3s ease 3s forwards;
+	transform:translateY(10px);
+}
+
+/* ----- FORM -----*/
+/*.form-container {
+	opacity:0;
+	animation:slideIn .7s ease .7s forwards;
+	transform:translateX(100px);
+}*/
+
+#form-title {
+	opacity:0;
+	animation:upAndIn 1s ease 1s forwards;
+	transform:translateY(10px);
+}
+
+.form-info {
+	opacity:0;
+	animation:upAndIn 1.5s ease 1.5s forwards;
+	transform:translateY(10px);
+}
+
+#newUserName, #newUserEmail {
+	opacity:0;
+	animation: upAndIn 2s ease 2s forwards;
+	transform:translateY(10px);
+}
+
+button.reserve-btn {
+	opacity:0;
+	animation: upAndIn 2.5s ease 2.5s forwards;
+	transform:translateY(10px);
+}
+
+.redirect-container {
+	opacity:.5;
+	animation: slideIn .5s ease .5s forwards;
+	transform:translateY(-500px);
+}
+
+
+/* ================== TEXT ================== */
+h1, h2, h3, h4, h5 {
+	font-family: 'Ubuntu', Arial, sans-serif;
+	color:#eb3b34;
+}
+
+h2 {
+	padding:5%;
+	margin:0 auto;
+	text-align:center;
+}
+
+p {
+	font-family:'Roboto', Arial, sans-serif;
+	color:#fff;
+	font-size:16px;
+}
+
+#course-title {
+	position:relative;
+	padding:0;
+	border:0;
+
+	font-size:35px;
+	text-align:center;
+	color:#fff;
+
+	z-index:5;
+	opacity:0;
+	animation: upAndIn .5s ease .5s forwards;
+	transform:translateY(10px);
+}
+
+/* ================== BUTTONS ================== */
+button a {
+	color:#fff;
+	text-decoration:none;
+	font-family:'Ubuntu', Arial, sans-serif;
+}
+
+button {
+	position:relative;
+	float:right;
+
+	background-color:transparent;
+	margin:5%;
+
+	border:2px;
+	border-radius:42px;
+	border-color:#eb3b34;
+	border-style: solid;
+	padding:10px;
+
+	font-family:'Ubuntu', Arial, sans-serif;
+	font-size:22px;
+	line-height:22px;
+	color:#fff;
+	text-decoration:none;
+}
+
+button:hover, button a:hover {
+	background-color:#eb4b34;
+	color:#fff;
+	text-decoration:none;
+}
+
+.glyphicon {
+	color:#fff;
+	height:50px;
+	width:50px;
+}
+
+.glyphicon:hover {
+	color:#eb3b34;
+}
+
+/* ================== IMAGES ================== */
+#courseimg {
+	width:auto;
+	height:490px;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/* ================== COMPONENTS ================== */
+
+/* ----- CONTAINERS ----- */
+.main-container {
+	position:relative;
+	width:50%;
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+.information-container, .form-container {
+	position:relative;
+	background-color: #2a2431;
+	width:50%;
+	height:100%;
+	padding:2%;
+}
+
+.redirect-container {
+	position:absolute;
+	background-color:#261c2c;
+	width:100%;
+	height:100%;
+	z-index:10;
+	padding:0px 15px 0px 15px;
+}
+
+/* ----- FORMS ----- */
+form {
+	margin:0 auto;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #fff;
+	font-size:18px;
+	font-family:'Roboto', Arial, sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #fff;
+	font-size:18px;
+	font-family:'Roboto', Arial, sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-size:18px;
+	font-family:'Roboto', Arial, sans-serif;
+	color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-size:18px;
+	font-family:'Roboto', Arial, sans-serif;
+	color: #fff;
+}
+
+#newUserName, #newUserEmail {
+	background:#3d3744;
+	border-radius:40px;
+	border:none;
+	outline:0;
+	margin:5px 8px;
+	padding:16px 30px;
+	width:200px;
+
+	color:#fff;
+	line-height:18px;
+	font-size:18px;
+	font-family:'Roboto', Arial, sans-serif;
+
+}
+
+/* ----- CONTENT ----- */
+#information-content {
+	width:80%;
+	height:80%;
+	margin:0 auto;
+}
+
+#form-content {
+	width:80%;
+	height:80%;
+	margin: 0 auto;
+}
+
+#redirect-content {
+	width:50%;
+	height:50%;
+	margin:10% auto;
+}
+
+#redirect-content h1{
+	margin:10% auto;
+	text-align:center;
+}
+
+#footer-content {
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+}
+
+#footer-content h1 {
+	position:relative;
+	left:0px;
+	top:140px;
+}
+
+/* ================== MEDIA QUERIES ================== */
+@media screen and (min-width:789px) and (max-width:992px) {
+	#main-row {
+		height:480px;
+	}
+
+	/* ----- IMAGES ----- */
+	#courseimg {
+		width:auto;
+		height:490px;
+		margin:0;
+		padding:0;
+		border:0;
+	}
+
+	/* ----- CONTAINERS ----- */
+	.main-container {
+		position:relative;
+		display:block;
+		float:left;
+
+		width:50%;
+		padding:0;
+		margin:0;
+		border:0;
+		z-index:5;
+	}
+
+	.form-container {
+		position:relative;
+		display:block;
+		float:left;
+
+		background-color: #2a2431;
+		width:50%;
+		height:480px;
+		padding:2%;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:788px) {
+
+	/* ----- GENERAL ----- */
+	.container {
+		overflow-y:scroll;
+	}
+
+	#main-row {
+		height:auto;
+	}
+
+	::-webkit-scrollbar {
+    	width: .1px;
+	}
+	 
+	::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3); 
+	    border-radius: 10px;
+	}
+	 
+	::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.5); 
+	}
+
+	/* ----- IMAGES ----- */
+	#courseimg {
+		width:757px;
+		height:auto;
+		margin:0;
+		padding:0;
+		border:0;
+	}
+
+	/* ----- CONTAINERS ----- */
+	.main-container {
+		position:relative;
+		display:block;
+		float:left;
+
+		width:100%;
+		padding:0;
+		margin:0;
+		border:0;
+		z-index:5;
+	}
+
+	.information-container, .form-container {
+		position:relative;
+		display:block;
+		float:left;
+
+		background-color: #2a2431;
+		width:100%;
+		height:500px;
+		padding:2%;
+	}
+
+	.redirect-container {
+		position:absolute;
+		background-color:#261c2c;
+		width:100%;
+		height:100%;
+		z-index:10;
+		margin:0 auto;
+		padding:0px 15px 0px 15px;
+	}
+
+	.redirect-container button {
+		float:left;
+		margin:3% 18%;
+	}
+}
+
+@media screen and (max-width:767px) {
+	/* ----- GENERAL ----- */
+	.container {
+		overflow-y:scroll;
+	}
+
+	#main-row {
+		height:auto;
+	}
+
+	::-webkit-scrollbar {
+    	width: .1px;
+	}
+	 
+	::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3); 
+	    border-radius: 10px;
+	}
+	 
+	::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.5); 
+	}
+
+	/* ----- IMAGES ----- */
+	#courseimg {
+		width:757px;
+		height:auto;
+		margin:0;
+		padding:0;
+		border:0;
+	}
+
+	/* ----- CONTAINERS ----- */
+	.main-container {
+		position:relative;
+		display:block;
+		float:left;
+
+		width:100%;
+		padding:0;
+		margin:0;
+		border:0;
+		z-index:5;
+	}
+
+	.information-container, .form-container {
+		position:relative;
+		display:block;
+		float:left;
+
+		background-color: #2a2431;
+		width:100%;
+		height:500px;
+		padding:2%;
+	}
+
+	.redirect-container {
+		position:absolute;
+		background-color:#261c2c;
+		width:100%;
+		height:100%;
+		z-index:10;
+		margin:0 auto;
+		padding:0px 15px 0px 15px;
+	}
+
+	.redirect-container button {
+		float:left;
+		margin:3% 5%;
+	}
+}

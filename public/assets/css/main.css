@@ -372,6 +372,13 @@ form {
 	}
 }
 
+@media screen and (min-width:789px) and (max-width:892px) {
+	.info-btn {
+		width:200px;
+		margin:0 auto;
+	}
+}
+
 @media screen and (min-width:768px) and (max-width:788px) {
 
 	/* ----- GENERAL ----- */

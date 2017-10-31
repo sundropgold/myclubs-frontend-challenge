@@ -63,7 +63,7 @@ export default class Main extends React.Component {
 					<div className="footer-container col-md-12">
 						
 						<div id="footer-content">
-							<h1>myClubs</h1>
+							<h1>my<span id="clubs">clubs</span></h1>
 						</div>
 
 					</div>

@@ -101,25 +101,25 @@ button.info-btn {
 
 #form-title {
 	opacity:0;
-	animation:upAndIn 1s ease 1s forwards;
+	animation:upAndIn .5s ease .5s forwards;
 	transform:translateY(10px);
 }
 
 .form-info {
 	opacity:0;
-	animation:upAndIn 1.5s ease 1.5s forwards;
+	animation:upAndIn 1s ease 1s forwards;
 	transform:translateY(10px);
 }
 
 #newUserName, #newUserEmail {
 	opacity:0;
-	animation: upAndIn 2s ease 2s forwards;
+	animation: upAndIn 1.5s ease 1.5s forwards;
 	transform:translateY(10px);
 }
 
 button.reserve-btn {
 	opacity:0;
-	animation: upAndIn 2.5s ease 2.5s forwards;
+	animation: upAndIn 2s ease 2s forwards;
 	transform:translateY(10px);
 }
 
@@ -134,6 +134,10 @@ button.reserve-btn {
 h1, h2, h3, h4, h5 {
 	font-family: 'Ubuntu', Arial, sans-serif;
 	color:#eb3b34;
+}
+
+#clubs {
+	color:#fff;
 }
 
 h2 {

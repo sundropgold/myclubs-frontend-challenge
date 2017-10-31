@@ -333,6 +333,39 @@ form {
 }
 
 /* ================== MEDIA QUERIES ================== */
+@media screen and (min-width:1444px) {
+	#main-row {
+		width:110%;
+		height:480px;
+
+		background-color:#2a2431;
+	}
+
+	button {
+		margin:0 auto;
+	}
+
+	/* ----- CONTENT ----- */
+	#information-content {
+		width:60%;
+		height:70%;
+		margin:0 auto;
+	}
+
+	#form-content {
+		width:60%;
+		height:70%;
+		margin: 0 auto;
+	}
+
+	#redirect-content {
+		width:50%;
+		height:50%;
+		margin:10% auto;
+	}
+
+}
+
 @media screen and (min-width:789px) and (max-width:992px) {
 	#main-row {
 		height:480px;

@@ -125,7 +125,7 @@ button.reserve-btn {
 
 .redirect-container {
 	opacity:.5;
-	animation: slideIn .5s ease .5s forwards;
+	animation: slideIn .3s ease .3s forwards;
 	transform:translateY(-500px);
 }
 
